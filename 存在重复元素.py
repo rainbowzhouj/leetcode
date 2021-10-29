@@ -3,6 +3,7 @@
 # @Author  : rainbowzhouj
 # @FileName: 存在重复元素.py
 # @Software: PyCharm
+import collections
 from typing import List
 
 
@@ -31,16 +32,16 @@ class Solution:
         # return False
 
     def containsDuplicate3(self, nums: List[int]) -> bool:
-        for i in range(len(nums)):
-            return set.add(nums[i])
-
+        hasp_map = collections.defaultdict(int)
+        for num in nums:
+            hasp_map[num] += 1
+            if hasp_map[num] > 1:
+                return True
+        return False
 
 
 if __name__ == '__main__':
     nums=[1,2,3,4]
     nums1=[1,2,3,1]
-    #print(set(nums1))
-    # nums1.sort()
-    # print(nums1)
-    print(Solution.containsDuplicate2(1, nums))
-    print(Solution.containsDuplicate2(1, nums1))
+    print(Solution.containsDuplicate3(1, nums))
+    print(Solution.containsDuplicate3(1, nums1))
