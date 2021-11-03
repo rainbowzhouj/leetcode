@@ -10,6 +10,9 @@ class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         while (1<= len(digits) and len(digits)<=100):
             for i in range (len(digits)-1,-1,-1):
+                """
+                不为9时，直接尾数+1，都为9时，赋值0，并在第0位，进1
+                """
                 if digits[i]!=9 :
                     digits[i]+=1
                     return digits
