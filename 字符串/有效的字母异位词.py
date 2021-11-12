@@ -3,6 +3,9 @@
 # @Author  : rainbowzhouj
 # @FileName: 有效的字母异位词.py
 # @Software: PyCharm
+import collections
+
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         """
@@ -27,7 +30,17 @@ class Solution:
                 return False
         return False
 
+    def isAnagram1(self, s: str, t: str) -> bool:
+        return collections.Counter(s)==collections.Counter(t)
+
 if __name__ == '__main__':
-    s = "anagram"
-    t = "nagaran"
-    print(Solution.isAnagram(1, s, t))
+    # s = "anagram"
+    # t = "nagaram"
+    # print(Solution.isAnagram1(1, s, t))
+    z={"a":1,"b":2}
+    res="".join(z)
+    on=z.keys()
+    print(res)
+    print(type(res))
+    print(on)
+    print(type(on))
