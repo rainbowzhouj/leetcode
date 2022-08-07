@@ -8,11 +8,18 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        total=0
-        for i in range(len(prices)-1 ):
-            if prices[i+1]>prices[i]:
-                total=total+prices[i+1]-prices[i]
-        return total
+        # total=0
+        # for i in range(len(prices)-1 ):
+        #     if prices[i+1]>prices[i]:
+        #         total=total+prices[i+1]-prices[i]
+        # return total
+        r = 0
+        min_price = float('inf')  # float('inf')表示负无穷
+        for price in prices:
+            min_price = min(min_price, price)  # 截止到当前的最低价（买入价）
+            r = max(r, price - min_price)  # 截止到目前的最高利润
+        return r
+
 
     def best(self,prices: List[int])->int:
         return sum([prices[i+1]-prices[i] for i in range(len(prices)-1) if prices[i+1]>prices[i]])
