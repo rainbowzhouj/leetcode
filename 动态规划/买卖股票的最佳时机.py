@@ -14,7 +14,7 @@ class Solution:
         #         total=total+prices[i+1]-prices[i]
         # return total
         r = 0
-        min_price = float('inf')  # float('inf')表示负无穷
+        min_price = float('inf')  # float('inf')表示正无穷
         for price in prices:
             min_price = min(min_price, price)  # 截止到当前的最低价（买入价）
             r = max(r, price - min_price)  # 截止到目前的最高利润
