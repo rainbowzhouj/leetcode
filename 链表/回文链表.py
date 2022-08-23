@@ -11,7 +11,7 @@ class Solution:
             head=head.next
         left,right=0,len(arr)-1
         while left<right:
-            if arr[left]!=arr[right]:
+            if arr[left]!=arr[right]: 
                 return False
             else:
                 left+=1

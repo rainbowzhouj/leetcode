@@ -39,6 +39,7 @@ class Solution(object):
             return list2
         if list2 is None:
             return list1
+
         is_max = list1.val >= list2.val
         l_max = list1 if is_max else list2
         l_min = list2 if is_max else list1
