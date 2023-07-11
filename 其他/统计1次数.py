@@ -20,6 +20,6 @@ def count_one(n):
   return sum(count)
 
 if __name__ == '__main__':
-    n=12
+    n=13
     print(count_one(n))
 
