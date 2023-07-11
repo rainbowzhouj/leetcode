@@ -13,3 +13,6 @@ class Solution:
             else:
                 ret+=dic[s[i]]
         return ret
+
+s=Solution()
+print(s.romanToInt('IV'))

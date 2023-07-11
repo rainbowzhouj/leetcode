@@ -25,4 +25,4 @@ class Solution:
 if __name__ == '__main__':
     num=[9,8,9]
     num1=[9,9,9]
-    print(Solution.plusOne(1,num1))
+    print(Solution.plusOne(1,num))

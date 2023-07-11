@@ -30,3 +30,5 @@ class Solution:
 s=Solution()
 head=[1,2]
 print(s.reverse(head))
+
+

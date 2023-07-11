@@ -31,18 +31,18 @@ class Solution:
                     return m
 
     def twoSum2(self, nums: List[int], target: int) -> List[int]:
-        dcit = {}
+        dict = {}
         for i in range(len(nums)):
-            if target - nums[i] in dcit:
-                return [dcit[target - nums[i]], i]
-            dcit[nums[i]] = i
+            if target - nums[i] in dict:
+                return [dict[target - nums[i]], i]
+            dict[nums[i]] = i
         return []
 
 
 
 if __name__ == '__main__':
     nums = [2,7,11,15]
-    target = 19
+    target = 18
     print(Solution.twoSum2(1,nums, target))
 
 

@@ -20,5 +20,7 @@ class Solution:
         ranks = {v: i for i, v in enumerate(sorted(set(arr)), 1)}
         return [ranks[v] for v in arr]
 
-if __name__ == '__main__':
-    print(Solution.arrayRankTransform(1,[40,20,10,30]))
+s=Solution()
+print(s.arrayRankTransform([40, 20, 10, 30, 20]))
+# if __name__ == '__main__':
+#     print(Solution.arrayRankTransform(1,[40,20,10,30,20]))

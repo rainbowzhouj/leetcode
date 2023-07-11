@@ -8,5 +8,5 @@ def a(list:List[int])->int:
     return len(list)
 
 if __name__=='__main__':
-    aa=[1,2,2,3]
+    aa=[0,0,1,1,1,2,2,3,3,4]
     print(a(aa))

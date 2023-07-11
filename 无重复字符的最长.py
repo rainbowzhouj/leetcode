@@ -26,4 +26,4 @@ class Solution:
         return x
 
 if __name__ == '__main__':
-    print(Solution.lengthOfLongestSubstring(1,s='abcac'))
+    print(Solution.lengthOfLongestSubstring(1,s='abcd12345ed125ss123456789'))

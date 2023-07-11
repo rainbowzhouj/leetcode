@@ -3,7 +3,7 @@
 # @Author  : rainbowzhouj
 # @FileName: 最长公共子串.py
 # @Software: PyCharm
-# 两个字符串的，最大公共字串
+# 两个字符串的，最大公共子串
 
 def twoString(a: str, b: str):
     left = 0

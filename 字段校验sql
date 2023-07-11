@@ -1,0 +1,7 @@
+SELECT count(*)  FROM `dw_user_label_df` WHERE 	 sfddsb  IS NOT NULL;
+SELECT count(*)  FROM `dw_user_label_df` WHERE `sfddsb`!='';
+SELECT pid, `zsxbyxm` ,`sfddsb`    FROM `dw_user_label_df` WHERE `sfddsb` !='' group by `sfddsb` ;
+等等
+
+CMD  ["java", "-Djava.security.egd=file:/dev/./urandom", "-Xms1024m", "-Xmx1024m" , "-jar", "nexus-me-automarketing-service.jar","--spring.cloud.nacos.discovery.namespace=678e88c1-f5b1-4e31-b742-b8e0b493dc14", "--NACOS_HOST=nacos-web.nacos-demo.com", "--NACOS_PORT=80", "--spring.profiles.active=uat", "--spring.cloud.nacos.config.namespace=678e88c1-f5b1-4e31-b742-b8e0b493dc14", "--spring.cloud.nacos.discovery.group=cdp"]
+CMD  ["java", "-Djava.security.egd=file:/dev/./urandom", "-Xms1024m", "-Xmx1024m" , "-jar", "fdre-apps.jar", "--app shunt", "--conf local", "--conf-path application.properties", "--event-type 1"]
